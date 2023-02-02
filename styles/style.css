@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(179, 179, 179);
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    
+    margin-left: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b2a90;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    position: static;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: black;
+    font-size: 5rem;
+}
+
+header img.portada {
+
+    width: auto;
+    height: 500px;
+}
+
+/*nav styles*/
+nav {
+
+    width: 25%;
+    height: 50vh;
+    align-self: flex-start;
+    color: rgb(219, 230, 9);
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+}
+
+nav a {
+    color: rgb(219, 230, 9);
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.navTitle {
+    margin-top: 2rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(113, 163, 56);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.navTitle h2 {
+    margin-top: 0;
+    align-self: center;
+    font-size:5 rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.notices {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    
+}
+
+.notices li {
+    color: white;
+    background-color: rgb(85, 221, 162);
+    margin: 10px;
+    width: 20vw;
+    padding: 5%;
+    justify-content: center;
+    list-style: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+   
+}
+
+.sectionHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
