@@ -15,7 +15,10 @@ header {
     background-color: #4b2a90;
     padding: 20px;
     text-align: center;
+    height: 50vh;
+    min-height: 660;
 }
+
 
 header h1 {
     position: static;
@@ -30,7 +33,11 @@ header h1 {
 header img.portada {
 
     width: auto;
-    height: 500px;
+    min-width: 50px;
+    height: 50vh;
+    max-height: 850px;
+    min-height:200px;
+
 }
 
 /*nav styles*/
@@ -51,6 +58,7 @@ nav a {
 }
 
 ul{
+    background-color: #4b2a90;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -73,6 +81,10 @@ ul{
     margin-bottom: 0;
 }
 
+section{
+    z-index:2;
+}
+
 .navTitle h2 {
     margin-top: 0;
     align-self: center;
@@ -81,22 +93,24 @@ ul{
     margin-bottom: 0;
 }
 
-.notices {
-    width: 100vw;
-    height: 40vh;
+.notices{
+    z-index: 1;
+    width: 80vw;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: row;
-    margin-top: 2rem;
-    
 }
 
 .notices li {
     color: white;
     background-color: rgb(85, 221, 162);
-    margin: 10px;
-    width: 20vw;
-    padding: 5%;
+    width: 300px;
+    height: 200px;
+    padding: 2%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
     justify-content: center;
     list-style: none;
     border-radius: 10px;
@@ -104,15 +118,30 @@ ul{
    
 }
 
-.sectionHead {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .container {
+
     display: flex;
     align-items: center;
-
+    z-index: 5;
+    margin-top: 9vh;
     flex-direction: column;
+    background-color: #4b2a90;
+}
+
+.space {
+    height: 400px;
+}
+.footer {
+    
+   z-index: 6;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:10vh;
+   width:100%;
+   background:rgb(86, 229, 134);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
